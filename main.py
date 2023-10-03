@@ -1,4 +1,4 @@
-
+# numbering the todos
 todos = []
 
 while True:
@@ -9,8 +9,8 @@ while True:
             todo = input("Enter a to do ")
             todos.append(todo)
         case 'show':
-            for items in todos:
-                print(items)
+            for index,items in enumerate(todos):
+                print(index,items)
         case 'edit':
             number = input("Number of the todo edit: ")
             number = number - 1
